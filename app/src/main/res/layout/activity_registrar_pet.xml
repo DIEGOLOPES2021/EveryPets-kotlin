@@ -35,8 +35,8 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="361dp"
-        android:layout_height="465dp"
+        android:layout_width="364dp"
+        android:layout_height="492dp"
         android:layout_marginTop="65dp"
         app:cardCornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
                 android:layout_height="50dp"
 
                 android:background="@drawable/edit_text"
-                android:drawablePadding="16dp"
+                android:drawablePadding="10dp"
                 android:hapticFeedbackEnabled="true"
                 android:hint="Especie"
 
@@ -85,10 +85,11 @@
 
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
-
                 android:background="@drawable/edit_text"
 
-                android:hint="  Porte"
+                android:hint="Porte"
+
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/ed_especie"
                 app:layout_constraintStart_toStartOf="@+id/ed_especie"
                 app:layout_constraintTop_toBottomOf="@+id/ed_especie" />
@@ -99,8 +100,9 @@
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
+                android:hint="Raça"
 
-                android:hint="  Raça"
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/ed_porte"
                 app:layout_constraintStart_toStartOf="@+id/ed_porte"
                 app:layout_constraintTop_toBottomOf="@+id/ed_porte" />
@@ -112,6 +114,8 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
                 android:hint="Idade"
+                android:padding="10dp"
+
                 app:layout_constraintEnd_toEndOf="@+id/ed_raca"
                 app:layout_constraintStart_toStartOf="@+id/ed_raca"
                 app:layout_constraintTop_toBottomOf="@+id/ed_raca" />
@@ -123,13 +127,15 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
                 android:hint="Fale do seu animal"
+                android:padding="10dp"
+
                 app:layout_constraintEnd_toEndOf="@+id/ed_idade"
                 app:layout_constraintStart_toStartOf="@+id/ed_idade"
                 app:layout_constraintTop_toBottomOf="@+id/ed_idade" />
 
 
             <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_registrar_pet"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
 
