@@ -49,10 +49,7 @@
             android:backgroundTint="#fff"
             android:background="@drawable/edit_text"
             android:hapticFeedbackEnabled="true"
-
             android:hint="E-mail"
-
-
             android:inputType="textWebEmailAddress"
             android:padding="16dp"
             app:layout_constraintBottom_toBottomOf="parent"

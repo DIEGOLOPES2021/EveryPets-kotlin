@@ -6,9 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secundaria"
-    tools:context=".CadastroComAnimalSalvo"
     >
 
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="65dp"
@@ -37,7 +39,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="358dp"
+        android:layout_width="335dp"
         android:layout_height="532dp"
         android:layout_marginTop="65dp"
         app:cardCornerRadius="25dp"
@@ -99,7 +101,7 @@
 
             <EditText
                 android:id="@+id/ed_especie"
-                android:layout_width="330dp"
+                android:layout_width="310dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
@@ -118,31 +120,41 @@
 
             <EditText
                 android:id="@+id/ed_porte"
-                android:layout_width="330dp"
+                android:layout_width="310dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
 
-                android:hint="  Porte"
+
+                android:hint="Porte"
+
+
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/ed_especie"
                 app:layout_constraintStart_toStartOf="@+id/ed_especie"
                 app:layout_constraintTop_toBottomOf="@+id/ed_especie" />
 
             <EditText
                 android:id="@+id/ed_raca"
-                android:layout_width="330dp"
+                android:layout_width="310dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
 
-                android:hint="  Raça"
+
+                android:hint="Raça"
+
+
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/ed_porte"
                 app:layout_constraintStart_toStartOf="@+id/ed_porte"
                 app:layout_constraintTop_toBottomOf="@+id/ed_porte" />
 
             <EditText
                 android:id="@+id/ed_idade"
-                android:layout_width="330dp"
+                android:layout_width="310dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
@@ -155,7 +167,7 @@
 
             <EditText
                 android:id="@+id/ed_fale_seu_anomal"
-                android:layout_width="330dp"
+                android:layout_width="310dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
@@ -169,7 +181,7 @@
 
             <Button
                 android:id="@+id/btn_login"
-                android:layout_width="330dp"
+                android:layout_width="310dp"
                 android:layout_height="wrap_content"
 
                 android:layout_margin="20dp"
@@ -205,5 +217,6 @@
 
 
     </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView >

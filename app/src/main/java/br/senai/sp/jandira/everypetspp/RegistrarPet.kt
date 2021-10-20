@@ -9,8 +9,8 @@ class RegistrarPet : AppCompatActivity() {
     lateinit var  proximaTela: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registrar_pet)
 
+        setContentView(R.layout.activity_registrar_pet)
         proximaTela = findViewById(R.id.btn_registrar_pet)
         proximaTela.setOnClickListener {
             Trocartela()
