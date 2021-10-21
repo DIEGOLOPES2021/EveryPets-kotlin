@@ -32,6 +32,7 @@
             android:hint="Senha"
             android:inputType="numberPassword"
             android:padding="16dp"
+            android:maxLength="60"
             android:backgroundTint="#fff"
             android:background="@drawable/edit_text"
             app:layout_constraintBottom_toBottomOf="parent"

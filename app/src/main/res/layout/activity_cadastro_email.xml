@@ -13,6 +13,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
+            android:id="@+id/ed_sair"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="5dp"

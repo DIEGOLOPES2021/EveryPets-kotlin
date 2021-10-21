@@ -17,6 +17,7 @@
            tools:ignore="MissingConstraints">
 
            <ImageView
+               android:id="@+id/ed_sair"
                android:layout_width="30dp"
                android:layout_height="30dp"
                android:layout_margin="5dp"
@@ -117,7 +118,7 @@
                    android:hint="Idade"
                    android:padding="10dp"
                     android:inputType="number"
-                   android:maxLength="100"
+                   android:maxLength="3"
                    app:layout_constraintEnd_toEndOf="@+id/ed_raca"
                    app:layout_constraintStart_toStartOf="@+id/ed_raca"
                    app:layout_constraintTop_toBottomOf="@+id/ed_raca" />
@@ -130,7 +131,7 @@
                    android:background="@drawable/edit_text"
                    android:hint="Fale do seu animal"
                    android:padding="10dp"
-
+                   android:maxLength="150"
                    app:layout_constraintEnd_toEndOf="@+id/ed_idade"
                    app:layout_constraintStart_toStartOf="@+id/ed_idade"
                    app:layout_constraintTop_toBottomOf="@+id/ed_idade" />
