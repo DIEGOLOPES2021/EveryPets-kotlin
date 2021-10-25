@@ -30,7 +30,6 @@ class RetrofitFactoryCep {
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
             }
-
             return retrofit
         }
 
