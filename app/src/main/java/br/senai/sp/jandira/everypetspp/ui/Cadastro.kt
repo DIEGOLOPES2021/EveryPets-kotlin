@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.everypetspp
+package br.senai.sp.jandira.everypetspp.ui
 
 import android.app.DatePickerDialog
 import android.content.Intent
@@ -7,6 +7,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import br.senai.sp.jandira.everypetspp.R
+import br.senai.sp.jandira.everypetspp.ui.CadastroEmail
+import br.senai.sp.jandira.everypetspp.ui.Localizacao
 import java.util.*
 
 class Cadastro : AppCompatActivity() {

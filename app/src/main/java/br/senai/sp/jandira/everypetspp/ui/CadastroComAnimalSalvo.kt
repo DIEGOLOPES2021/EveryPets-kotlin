@@ -1,10 +1,10 @@
-package br.senai.sp.jandira.everypetspp
+package br.senai.sp.jandira.everypetspp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
+import br.senai.sp.jandira.everypetspp.R
 
 class CadastroComAnimalSalvo : AppCompatActivity() {
     lateinit var voltar: ImageView
