@@ -16,8 +16,8 @@ class CadastroEmail : AppCompatActivity() {
 
         button = findViewById(R.id.btn_login_cadastro_email)
         button.setOnClickListener {
-           Trocartela()
-       }
+            Trocartela()
+        }
 
         voltar = findViewById(R.id.ed_sair)
         voltar.setOnClickListener {
@@ -26,7 +26,7 @@ class CadastroEmail : AppCompatActivity() {
         }
     }
     private fun Trocartela(){
-      val intent = Intent(this, Cadastro::class.java)
-      startActivity(intent)
-   }
+        val intent = Intent(this, Cadastro::class.java)
+        startActivity(intent)
+    }
 }

@@ -8,6 +8,7 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         tools:ignore="MissingConstraints">
@@ -25,6 +26,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView11"
         android:layout_width="337dp"
         android:layout_height="352dp"
         android:layout_marginTop="65dp"
@@ -109,7 +111,7 @@
                 tools:ignore="MissingConstraints">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/ed_confirmar_senha"
+                    android:id="@+id/ed_confirma"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     android:hint="Confirmar senha"
@@ -143,5 +145,21 @@
 
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView11">
+
+        <ImageView
+            android:layout_width="600dp"
+            android:layout_height="370"
+            android:src="@drawable/cachorrinhos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
