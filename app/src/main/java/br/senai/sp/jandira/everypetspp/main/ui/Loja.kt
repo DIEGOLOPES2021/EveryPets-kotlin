@@ -1,7 +1,8 @@
-package br.senai.sp.jandira.everypetspp
+package br.senai.sp.jandira.everypetspp.main.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.senai.sp.jandira.everypetspp.R
 
 class Loja : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

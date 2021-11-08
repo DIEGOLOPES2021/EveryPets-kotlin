@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.everypetspp.ui
+package br.senai.sp.jandira.everypetspp.main.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
