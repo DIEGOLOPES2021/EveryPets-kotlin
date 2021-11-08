@@ -25,8 +25,8 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="335dp"
-        android:layout_height="346dp"
+        android:layout_width="337dp"
+        android:layout_height="352dp"
         android:layout_marginTop="65dp"
         app:cardCornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,48 +48,75 @@
             android:layout_height="match_parent"
             android:backgroundTint="@color/black">
 
-
-            <EditText
-                android:id="@+id/ed_email"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="310dp"
-                android:layout_height="50dp"
-                android:background="@drawable/edit_text"
+                android:layout_height="wrap_content"
                 android:drawablePadding="10dp"
-                android:hapticFeedbackEnabled="true"
-                android:hint="E-mail"
-                android:inputType="textEmailAddress"
-                android:padding="10dp"
+                android:maxLength="120"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.266" />
+                app:layout_constraintVertical_bias="0.212"
+                tools:ignore="MissingConstraints">
 
-            <EditText
-                android:id="@+id/ed_senha"
-                android:layout_width="310dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/edit_text"
-                android:padding="10dp"
-                android:hint="Senha"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="@+id/ed_email"
-                app:layout_constraintStart_toStartOf="@+id/ed_email"
-                app:layout_constraintTop_toBottomOf="@+id/ed_email" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_email"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="120"
+                    android:shadowColor="#FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
-                android:id="@+id/ed_confirmar_senha"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_senha"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="310dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/edit_text"
-                android:padding="10dp"
-                android:hint="Confirma senha"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="@+id/ed_senha"
-                app:layout_constraintStart_toStartOf="@+id/ed_senha"
-                app:layout_constraintTop_toBottomOf="@+id/ed_senha" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:maxLength="120"
+                app:layout_constraintEnd_toEndOf="@+id/et_email"
+                app:layout_constraintStart_toStartOf="@+id/et_email"
+                app:layout_constraintTop_toBottomOf="@+id/et_email"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_senha"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:hint="Senha"
+                    android:inputType="textPassword"
+                    android:maxLength="120"
+                    android:shadowColor="#FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_confirmar_senha"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:maxLength="120"
+                app:layout_constraintEnd_toEndOf="@+id/et_senha"
+                app:layout_constraintStart_toStartOf="@+id/et_senha"
+                app:layout_constraintTop_toBottomOf="@+id/et_senha"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_confirmar_senha"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:hint="Confirmar senha"
+                    android:inputType="textPassword"
+                    android:maxLength="120"
+                    android:shadowColor="#FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btn_login_cadastro_email"
@@ -107,10 +134,9 @@
 
                 app:cornerRadius="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/ed_confirmar_senha"
-                app:layout_constraintStart_toStartOf="@+id/ed_confirmar_senha"
-                app:layout_constraintTop_toBottomOf="@+id/ed_confirmar_senha"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintEnd_toEndOf="@+id/et_confirmar_senha"
+                app:layout_constraintStart_toStartOf="@+id/et_confirmar_senha"
+                app:layout_constraintTop_toBottomOf="@+id/et_confirmar_senha" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

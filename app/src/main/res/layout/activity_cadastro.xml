@@ -8,6 +8,7 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         tools:ignore="MissingConstraints">
@@ -25,8 +26,9 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="335dp"
-        android:layout_height="421dp"
+        android:id="@+id/cardView3"
+        android:layout_width="334dp"
+        android:layout_height="415dp"
         android:layout_marginTop="65dp"
         app:cardCornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,67 +50,120 @@
             android:layout_height="match_parent"
             android:backgroundTint="@color/black">
 
-
-            <EditText
-                android:id="@+id/ed_nome"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_nome"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="310dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:maxLength="120"
-                android:background="@drawable/edit_text"
-                android:hapticFeedbackEnabled="true"
-                android:hint="Nome"
-
-
-                android:inputType="textEmailAddress"
-                android:padding="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.578"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.212" />
+                app:layout_constraintVertical_bias="0.180"
+                tools:ignore="MissingConstraints">
 
-            <EditText
-                android:id="@+id/ed_data_nascimento"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_nome"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:hint="Nome"
+                    android:inputType="textImeMultiLine"
+                    android:maxLength="120"
+                    android:shadowColor="#FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--
+          <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_nome"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="310dp"
-                android:focusable="false"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/edit_text"
-                android:inputType="date"
-                android:hint=" Data de Nascimento"
-                android:padding="10dp"
-                app:layout_constraintEnd_toEndOf="@+id/ed_nome"
-                app:layout_constraintStart_toStartOf="@+id/ed_nome"
-                app:layout_constraintTop_toBottomOf="@+id/ed_nome" />
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:maxLength="120"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.212">
 
-            <EditText
-                android:id="@+id/ed_telefone"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_nome"
+                    android:layout_width="310dp"
+                    android:maxLength="120"
+                    android:layout_height="50dp"
+                    android:hint="Nome"
+                    android:inputType="textImeMultiLine"
+                    android:shadowColor="#FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
+        -->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_data_nascimento"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="310dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/edit_text"
-                android:hint="telefone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLength="120"
+                app:layout_constraintEnd_toEndOf="@+id/et_nome"
+                app:layout_constraintStart_toStartOf="@+id/et_nome"
+                app:layout_constraintTop_toBottomOf="@+id/et_nome"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_data_nascimento"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:focusable="false"
+                    android:hint="Data nascimento"
+                    android:inputType="textImeMultiLine"
+                    android:maxLength="120"
+                    android:shadowColor="#FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_telefone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:maxLength="11"
-                android:inputType="number"
-                android:padding="10dp"
-                app:layout_constraintEnd_toEndOf="@+id/ed_data_nascimento"
-                app:layout_constraintStart_toStartOf="@+id/ed_data_nascimento"
-                app:layout_constraintTop_toBottomOf="@+id/ed_data_nascimento" />
+                app:layout_constraintEnd_toEndOf="@+id/et_data_nascimento"
+                app:layout_constraintStart_toStartOf="@+id/et_data_nascimento"
+                app:layout_constraintTop_toBottomOf="@+id/et_data_nascimento"
+                tools:ignore="MissingConstraints">
 
-            <EditText
-                android:id="@+id/ed_cpf"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_telefone"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:hint="Telefone"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:shadowColor="#FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_cpf"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="310dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/edit_text"
-                android:hint="CPF"
-                android:maxLength="11"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:inputType="number"
-                android:padding="10dp"
-                app:layout_constraintEnd_toEndOf="@+id/ed_telefone"
-                app:layout_constraintStart_toStartOf="@+id/ed_telefone"
-                app:layout_constraintTop_toBottomOf="@+id/ed_telefone" />
+                app:layout_constraintEnd_toEndOf="@+id/et_telefone"
+                app:layout_constraintStart_toStartOf="@+id/et_telefone"
+                app:layout_constraintTop_toBottomOf="@+id/et_telefone"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_cpf"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:hint="CPF"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:shadowColor="#FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btn_login_cadastro_usuario"
@@ -124,14 +179,25 @@
 
 
                 app:cornerRadius="15dp"
-                app:layout_constraintEnd_toEndOf="@+id/ed_cpf"
-                app:layout_constraintStart_toStartOf="@+id/ed_cpf"
-                app:layout_constraintTop_toBottomOf="@+id/ed_cpf" />
+                app:layout_constraintEnd_toEndOf="@+id/et_cpf"
+                app:layout_constraintStart_toStartOf="@+id/et_cpf"
+                app:layout_constraintTop_toBottomOf="@+id/et_cpf" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fundopets"></ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
