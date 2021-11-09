@@ -28,6 +28,7 @@
                 tools:layout_editor_absoluteX="16dp" />
 
             <Button
+
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -193,7 +194,7 @@
 
 
                 <Button
-                    android:id="@+id/btn_login"
+                    android:id="@+id/btn_login_cadastro_animal"
                     android:layout_width="310dp"
                     android:layout_height="wrap_content"
 
