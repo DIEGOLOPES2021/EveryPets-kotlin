@@ -2,6 +2,7 @@ package br.senai.sp.jandira.everypetspp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
@@ -11,10 +12,10 @@ import androidx.fragment.app.Fragment
 import br.senai.sp.jandira.everypetspp.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class DashBoard : AppCompatActivity(), View.OnClickListener, BottomNavigationView.OnNavigationItemSelectedListener {
-    private lateinit var  buttonHome: Button
-    private lateinit var  buttonPerfil: Button
-    private lateinit var  buttonCarrinho: Button
+class DashBoard : AppCompatActivity() {
+//    private lateinit var buttonHome: Button
+//    private lateinit var buttonPerfil: Button
+//    private lateinit var buttonCarrinho: Button
 
     private lateinit var homeFragment: HomeFragment
     private lateinit var perfilFragment: PerfilFragment
@@ -22,69 +23,66 @@ class DashBoard : AppCompatActivity(), View.OnClickListener, BottomNavigationVie
 
     //
 
-    private lateinit var  bottomNavigationView: BottomNavigationView
+    private lateinit var bottomNavigationView: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_dash_board)
 
-        buttonHome= findViewById(R.id.button_home)
-        buttonHome.setOnClickListener(this)
-
-        buttonPerfil= findViewById(R.id.button_perfil)
-        buttonPerfil.setOnClickListener(this)
-
-        buttonCarrinho= findViewById(R.id.button_carrinho)
-        buttonCarrinho.setOnClickListener(this)
+//        buttonHome = findViewById(R.id.button_home)
+//
+//        buttonPerfil = findViewById(R.id.button_perfil)
+//
+//        buttonCarrinho = findViewById(R.id.button_carrinho)
 
         homeFragment = HomeFragment()
         perfilFragment = PerfilFragment()
         carrinhoFragment = CarrinhoFragment()
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
-        bottomNavigationView.setOnNavigationItemReselectedListener(this)
         //
         setFragment(homeFragment)
 
+//        buttonHome.setOnClickListener {
+//            setFragment(homeFragment)
+//        }
+//        buttonPerfil.setOnClickListener {
+//            setFragment(perfilFragment)
+//        }
+//        buttonCarrinho.setOnClickListener {
+//            setFragment(carrinhoFragment)
+//        }
+
+        bottomNavigationView.setOnItemSelectedListener {
+            onNavigationItemSelected(it)
+        }
+
     }
 
-    private fun setFragment(fragment: Fragment){
+    private fun setFragment(fragment: Fragment) {
 
         val fragmentTrasaction = //gerencia os fragmentos/ transacoes
-         supportFragmentManager.beginTransaction()
+                supportFragmentManager.beginTransaction()
         fragmentTrasaction.replace(R.id.frame_fragments, fragment)
         //faz a acontecer
         fragmentTrasaction.commit()
 
     }
 
-    override fun onClick(v: View) {
-     when (v.id){
-         R.id.button_home ->{
-            setFragment(homeFragment)
-         }
-         R.id.button_perfil ->{
-             setFragment(perfilFragment)
-         }
-         R.id.button_carrinho ->{
-             setFragment(carrinhoFragment)
-         }
-     }
-    }
-
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-      when(item.itemId){
-          R.id.button_home ->{
-              setFragment(homeFragment)
-          }
-          R.id.button_perfil ->{
-              setFragment(perfilFragment)
-          }
-          R.id.button_carrinho ->{
-              setFragment(carrinhoFragment)
-          }
-      }
+    fun onNavigationItemSelected(item: MenuItem): Boolean {
+        Log.i("xpto", "caiu")
+        when (item.itemId) {
+            R.id.menu_home -> {
+                setFragment(homeFragment)
+            }
+            R.id.menu_pesquisa -> {
+                setFragment(perfilFragment)
+            }
+            else -> {
+                setFragment(carrinhoFragment)
+            }
+        }
         return true
     }
 

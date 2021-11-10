@@ -5,42 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.CarrinhoFragment"
-   >
-
-    <LinearLayout
-        android:id="@+id/ll_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        >
-
-        <Button
-            android:id="@+id/button_home"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="home"/>
-        <Button
-            android:id="@+id/button_perfil"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="perfil"/>
-        <Button
-            android:id="@+id/button_carrinho"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="carrinho"/>
-
-    </LinearLayout>
+    >
 
     <FrameLayout
         android:id="@+id/frame_fragments"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/ll_button"
         android:layout_above="@+id/bottom_navigation"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -48,10 +18,8 @@
         app:menu="@menu/bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/links"
         android:layout_alignParentBottom="true"
-        app:itemTextColor="@color/white"
-        app:itemIconTint="@color/white"/>
+        />
 
 
 </RelativeLayout>
