@@ -216,7 +216,7 @@
                     android:src="@drawable/fundopts"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.078"
+                    app:layout_constraintHorizontal_bias="0.359"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"></ImageView>
             </androidx.constraintlayout.widget.ConstraintLayout>

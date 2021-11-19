@@ -16,6 +16,7 @@ class DashBoard : AppCompatActivity() {
     private lateinit var homeFragment: HomeFragment
     private lateinit var pesquisaFragment: PesquisaFragment
     private lateinit var carrinhoFragment: CarrinhoFragment
+    private lateinit var perfilFragment: PerfilFragment
 
     //
 
@@ -35,6 +36,7 @@ class DashBoard : AppCompatActivity() {
         homeFragment = HomeFragment()
         pesquisaFragment = PesquisaFragment()
         carrinhoFragment = CarrinhoFragment()
+        perfilFragment= PerfilFragment()
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         //
@@ -74,6 +76,9 @@ class DashBoard : AppCompatActivity() {
             }
             R.id.menu_pesquisa -> {
                 setFragment(pesquisaFragment)
+            }
+            R.id.menu_perfil ->{
+                setFragment(perfilFragment)
             }
             else -> {
                 setFragment(carrinhoFragment)
