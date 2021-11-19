@@ -23,12 +23,17 @@
             android:layout_width="match_parent"
             android:layout_height="805dp"
             android:src="@drawable/goldenn"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            >
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView8"
@@ -176,8 +181,8 @@
                         android:id="@+id/imageView4"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logofacebook"
                         android:layout_marginStart="10dp"
+                        android:src="@drawable/logofacebook"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -186,11 +191,11 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:text="Entrar com Facebook"
                         android:textColor="#3b3b3b"
-                        android:textSize="22sp"
 
-                        android:layout_marginStart="30dp"
+                        android:textSize="22sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView4"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -201,8 +206,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="336dp"
                 android:layout_height="50dp"
-                app:cardCornerRadius="15dp"
                 android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
                 app:layout_constraintEnd_toEndOf="@+id/cardView8"
                 app:layout_constraintStart_toStartOf="@+id/cardView8"
                 app:layout_constraintTop_toBottomOf="@+id/cardView10">
@@ -217,8 +222,8 @@
                         android:id="@+id/imageView3"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logogoogle"
                         android:layout_marginStart="10dp"
+                        android:src="@drawable/logogoogle"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -227,9 +232,9 @@
                         android:id="@+id/textView8"
                         android:layout_width="190dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:text="Entrar com Google"
                         android:textColor="#3b3b3b"
-                        android:layout_marginStart="30dp"
                         android:textSize="22sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView3"

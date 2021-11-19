@@ -4,10 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import android.view.View
-import android.widget.Button
-import android.widget.FrameLayout
-import androidx.core.text.isDigitsOnly
 import androidx.fragment.app.Fragment
 import br.senai.sp.jandira.everypetspp.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -18,7 +14,7 @@ class DashBoard : AppCompatActivity() {
 //    private lateinit var buttonCarrinho: Button
 
     private lateinit var homeFragment: HomeFragment
-    private lateinit var perfilFragment: PerfilFragment
+    private lateinit var pesquisaFragment: PesquisaFragment
     private lateinit var carrinhoFragment: CarrinhoFragment
 
     //
@@ -37,7 +33,7 @@ class DashBoard : AppCompatActivity() {
 //        buttonCarrinho = findViewById(R.id.button_carrinho)
 
         homeFragment = HomeFragment()
-        perfilFragment = PerfilFragment()
+        pesquisaFragment = PesquisaFragment()
         carrinhoFragment = CarrinhoFragment()
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
@@ -77,7 +73,7 @@ class DashBoard : AppCompatActivity() {
                 setFragment(homeFragment)
             }
             R.id.menu_pesquisa -> {
-                setFragment(perfilFragment)
+                setFragment(pesquisaFragment)
             }
             else -> {
                 setFragment(carrinhoFragment)
