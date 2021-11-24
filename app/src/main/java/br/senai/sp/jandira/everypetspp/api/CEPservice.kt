@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.everypetspp.ui.api
+package br.senai.sp.jandira.everypetspp.api
 
 import retrofit2.Call
 import retrofit2.http.GET

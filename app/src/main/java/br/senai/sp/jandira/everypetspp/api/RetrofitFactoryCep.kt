@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.everypetspp.ui.api
+package br.senai.sp.jandira.everypetspp.api
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.everypetspp.ui.utils
+package br.senai.sp.jandira.everypetspp.utils
 
 import android.text.Editable
 import android.text.TextWatcher

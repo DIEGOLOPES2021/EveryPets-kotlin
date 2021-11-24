@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.everypetspp.ui.data
+package br.senai.sp.jandira.everypetspp.data
 
 data class loginRes(
         var user: User,

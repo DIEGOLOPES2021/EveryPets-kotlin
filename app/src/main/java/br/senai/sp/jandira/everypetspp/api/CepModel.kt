@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.everypetspp.ui.api
+package br.senai.sp.jandira.everypetspp.api
 
 data class CepModel(
     var cep: String,

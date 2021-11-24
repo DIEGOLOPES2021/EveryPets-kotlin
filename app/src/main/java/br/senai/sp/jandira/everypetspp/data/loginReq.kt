@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.everypetspp.ui.data
+package br.senai.sp.jandira.everypetspp.data
 
 import com.google.gson.annotations.SerializedName
 
