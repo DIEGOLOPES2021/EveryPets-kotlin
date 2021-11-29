@@ -17,6 +17,8 @@ class DashBoard : AppCompatActivity() {
     private lateinit var pesquisaFragment: PesquisaFragment
     private lateinit var carrinhoFragment: CarrinhoFragment
     private lateinit var perfilFragment: PerfilFragment
+    private lateinit var meuPetFragment: MeuPetFragment
+    private lateinit var bottom_navigation : BottomNavigationView
 
     //
 
@@ -37,10 +39,16 @@ class DashBoard : AppCompatActivity() {
         pesquisaFragment = PesquisaFragment()
         carrinhoFragment = CarrinhoFragment()
         perfilFragment= PerfilFragment()
+        meuPetFragment = MeuPetFragment()
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         //
+        bottom_navigation = findViewById(R.id.bottom_navigation)
+
         setFragment(homeFragment)
+        bottom_navigation.selectedItemId = R.id.menu_home
+
+        //bottom_navigation.selectedItemId = R.id.ic_home
 
 //        buttonHome.setOnClickListener {
 //            setFragment(homeFragment)
@@ -79,6 +87,9 @@ class DashBoard : AppCompatActivity() {
             }
             R.id.menu_perfil ->{
                 setFragment(perfilFragment)
+            }
+            R.id.menu_meu_pet ->{
+                setFragment(meuPetFragment)
             }
             else -> {
                 setFragment(carrinhoFragment)
