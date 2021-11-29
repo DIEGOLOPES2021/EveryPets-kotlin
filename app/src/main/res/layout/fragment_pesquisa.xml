@@ -30,11 +30,11 @@
         <EditText
             android:layout_width="330dp"
             android:layout_height="40dp"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/edit_text_pesquisa"
             android:backgroundTint="@color/white"
             android:inputType="text"
             android:maxLength="200"
-            android:padding="10dp"
+            android:padding="11dp"
             android:hint="Pesquisar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
