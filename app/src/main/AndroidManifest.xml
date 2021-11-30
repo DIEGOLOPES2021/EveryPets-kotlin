@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EveryPets">
-        <activity android:name=".ui.CarrinhoFragment"></activity>
-        <activity android:name=".ui.DashBoard" />
-        <activity android:name=".ui.Localizacao" />
-        <activity android:name=".ui.RegistrarPet" />
-        <activity android:name=".EditInformacoesPet" />
-        <activity android:name=".ui.CadastroComAnimalSalvo" />
-        <activity android:name=".ui.CadastroEmail" />
-        <activity android:name=".ui.Cadastro" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.DashBoard" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.Localizacao" />
+        <activity android:name=".ui.RegistrarPet" />
+        <activity android:name=".ui.CadastroComAnimalSalvo" />
+        <activity android:name=".ui.CadastroEmail" />
+        <activity android:name=".ui.Cadastro" />
+        <activity android:name=".ui.MainActivity">
+
         </activity>
     </application>
 
