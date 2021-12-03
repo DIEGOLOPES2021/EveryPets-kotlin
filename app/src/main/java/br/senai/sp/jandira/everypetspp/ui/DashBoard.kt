@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import br.senai.sp.jandira.everypetspp.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -16,7 +17,7 @@ class DashBoard : AppCompatActivity(), View.OnClickListener {
 //    private lateinit var buttonCarrinho: Button
 
     ///////
-    private lateinit var btnCarrinho  : Button
+    private lateinit var btnCarrinho  : ImageView
 
     private lateinit var homeFragment: HomeFragment
     private lateinit var pesquisaFragment: PesquisaFragment
