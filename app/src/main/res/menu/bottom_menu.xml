@@ -11,10 +11,9 @@
 
     <item
         android:id="@+id/menu_carrinho"
-        android:title="Carrinho"
-        android:icon="@drawable/cart_24"
-        app:showAsAction="always"
-        />
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="Pedidos"
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/menu_home"
