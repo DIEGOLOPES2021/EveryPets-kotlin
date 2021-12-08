@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import br.senai.sp.jandira.everypetspp.R
-import br.senai.sp.jandira.everypetspp.ui.utils.MaskFormatUtil
+import br.senai.sp.jandira.everypetspp.utils.MaskFormatUtil
 
 class Localizacao : AppCompatActivity() {
     lateinit var edCep: EditText
