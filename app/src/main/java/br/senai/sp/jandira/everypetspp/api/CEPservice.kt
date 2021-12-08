@@ -1,14 +1,8 @@
-package br.senai.sp.jandira.everypetspp.ui.api
+package br.senai.sp.jandira.everypetspp.api
 
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
-
-/* *
-*  ************************************************************************************
-*  Esta interface é utilizada para criar as chamadas HTTP para os endpoints da API
-*  ************************************************************************************
-* */
 
 interface CEPService {
 

@@ -8,10 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import br.senai.sp.jandira.everypetspp.R
-import br.senai.sp.jandira.everypetspp.ui.CadastroEmail
-import br.senai.sp.jandira.everypetspp.ui.Localizacao
-import br.senai.sp.jandira.everypetspp.ui.utils.MaskFormatUtil
-import com.google.android.material.textfield.TextInputLayout
+import br.senai.sp.jandira.everypetspp.utils.MaskFormatUtil
 import java.util.*
 class Cadastro : AppCompatActivity() {
 
